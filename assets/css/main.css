@@ -529,7 +529,7 @@ input {
 
 .platform__modal_content{
   background-color: var(--white-color);
-  margin: auto auto;
+  margin: 75px auto;
   padding: 20px;
   width: 300px;
   animation:  modalOpen;
