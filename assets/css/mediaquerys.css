@@ -27,33 +27,41 @@
       transition: all .5s ease-in-out;
       width: 80px;
     }
-    .plan__container{
+    .platform__container{
       transition: .5s all ease-in-out;
       grid-template-columns: max-content;
       justify-content: center;
     }
-    .plan__card,
-    .plan__img{
+    .platform__card,
+    .platform__img{
       transition: .5s all ease-in-out;
       width: 250px;
     }
 
-    /*.plan_container_price{
-      width: 13.5rem;
-      background-color: var(--first-color);
-      border-radius: .2rem;
-    }*/
   }
   
   /* For medium devices */
   @media screen and (min-width: 568px) {
-    .plan__container{
+    .platform__container_streaming{
       transition: .5s all ease-in-out;
       grid-template-columns: repeat(2, max-content);
       gap: 2rem ;
     }
-    .plan__card,
-    .plan__img{
+    .platform__container_musica{
+      transition: .5s all ease-in-out;
+      grid-template-columns: repeat(2, max-content);
+      gap: 2rem ;
+    }
+    
+    .platform__container_tv{
+      transition: .5s all ease-in-out;
+      grid-template-columns: repeat(2, max-content);
+      gap: 2rem ;
+    }
+
+
+    .platform__card,
+    .platform__img{
       transition: .5s all ease-in-out;
       width: 250px;
     }
@@ -71,6 +79,9 @@
     .home__info_promotion {
       transition: all .5s ease-in-out;
       width: 250px;
+    }
+    .platform__modal_content{
+      width: 400px;
     }
   }
   
@@ -156,21 +167,49 @@
       bottom: 3rem;
     }
 
-    .plan__container{
+    .platform__container_streaming{
       padding-top: 2rem;
       transition: .5s all ease-in-out;
       grid-template-columns: repeat(2, max-content);
       gap: 2rem ;
     }
-    .plan__card,
-    .plan__img{
+
+    .platform__container_musica{
+      padding-top: 2rem;
+      transition: .5s all ease-in-out;
+      grid-template-columns: repeat(2, max-content);
+      gap: 2rem ;
+    }
+    
+    .platform__container_tv{
+      padding-top: 2rem;
+      transition: .5s all ease-in-out;
+      grid-template-columns: repeat(2, max-content);
+      gap: 2rem ;
+    }
+
+    .platform__card,
+    .platform__img{
       transition: .5s all ease-in-out;
       width: 300px;
+    }
+
+    .platform__modal_content{
+      margin-top: 19vh;
+      width: 650px;
+    }
+
+    .platform__modal_body{
+      grid-template-columns: repeat(2, max-content);
+      gap: 2rem ;
     }
 
     .footer__rights {
       flex-direction: row;
       justify-content: space-between;
+    }
+    .platform__modal_footer{
+      margin: 0 25px 0 25px;
     }
   }
   
@@ -204,17 +243,40 @@
       width: 240px;
     }
 
-    .plan__container{
+    .platform__container_streaming{
       padding-top: 2rem;
       transition: .5s all ease-in-out;
       grid-template-columns: repeat(3, max-content);
-      gap: 2rem ;
     }
-    .plan__card,
-    .plan__img{
+    
+    .platform__container_musica{
+      padding-top: 2rem;
+      transition: .5s all ease-in-out;
+      grid-template-columns: repeat(3, max-content);
+    }
+    
+    .platform__container_tv{
+      padding-top: 2rem;
+      transition: .5s all ease-in-out;
+      grid-template-columns: repeat(3, max-content);
+    }
+
+    .platform__card,
+    .platform__img{
       transition: .5s all ease-in-out;
       width: 290px;
     }
+
+    .platform__modal_content{
+      margin: 170px auto;
+      width: 900px;
+    }
+
+    .platform__modal_body{
+      grid-template-columns: repeat(3, max-content);
+      gap: 2rem ;
+    }
+
 
     .footer__content {
       justify-items: center;
@@ -233,14 +295,14 @@
       margin-top: .7rem;
       width: 8rem;
     }
-    .plan__container{
+    .platform__container{
       padding-top: 2rem;
       transition: .5s all ease-in-out;
       grid-template-columns: repeat(3, max-content);
       gap: 3rem 2rem;
     }
-    .plan__card,
-    .plan__img{
+    .platform__card,
+    .platform__img{
       transition: .5s all ease-in-out;
       width: 320px;
     }

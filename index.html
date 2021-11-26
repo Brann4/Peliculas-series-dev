@@ -9,8 +9,6 @@
     <link rel="shortcut icon" href="./assets/img/logos/LOGO_SOMOS_PREMIUM.png" type="image/x-icon">
     <!-- FONT AWESOME ICONS CSS-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <!-- SWIPER CSS-->
-    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
     <!-- MAIN CSS-->
     <link rel="stylesheet" href="./assets/css/main.css">
     <!--MEDIA QUERIES-->
@@ -37,7 +35,7 @@
                             Contactenos
                          </li>
                     </a>
-                    <a href="#plan" class="nav__link">
+                    <a href="#platforms" class="nav__link">
                         <li class="nav__item txt">
                             Plataformas
                         </li>
@@ -66,7 +64,7 @@
                             para ti
                         </span>
                     </p>
-                    <a href="#plan" class="button">Explorar</a>
+                    <a href="#platforms" class="button">Explorar</a>
                 </div>
 
                 <div class="home__social">
@@ -101,178 +99,793 @@
                 </div>-->
             </div>
         </section>
-        <!--
-        <section class="plan section container" id="plans">
-            <h2 class="section__title uppercase">Peliculas y series<br> ilimitadas</h2>
-           <div class="plan__container"> 
-                <div class="plan__card">
-                    <div class="plan_header_img">
-                        <img loading="lazy"  src="./assets/img/icons/netflix-icon.png"class="plan__icon">
-                        
-                        <div class="plan__description">
-                            <p> Netflix original sin cambios, sin cortes, sin tarjetas y en la máxima definición 4K.
-                                Elige una de nuevas opciones y disfruta de tus series y peliculas favoritas.
-                            </p> 
-                        </div>
-                    </div>
 
-                    <div class="plan__button uppercase">    
-                        <a href="#"><i class="fas fa-shopping-cart"></i>  Ver planes</a>
-                    </div>
-                </div>
-           </div>
-           
-           
-
-            <br><br>
-            <div class="plan_header_img">
-                <img loading="lazy"  src="/assets/img/icons/hbo_max.png" class="plan__icon">
-                <h2 class="plan__header_title text-color-black">Planes HBO Max</h2>
-            </div>
-           
-          
-
-            <br><br>
-            <div class="plan_header_img">
-                <img loading="lazy"  src="./assets/img/icons/spotify-icon.png" class="plan__icon">
-                <h2 class="plan__header_title text-color-black">Planes de Spofity</h2>
-            </div>
-           
-           
-
-            <br><br>
-            <div class="plan_header_img">
-                <img loading="lazy"  src="./assets/img/icons/star_plus.png" class="plan__icon">
-                <h2 class="plan__header_title text-color-black">Planes Star Plus</h2>
-            </div>
-           
-        
-
-        </section>-->
 
         <!--================ PLANS ================-->
-        <section class="plan section" id="plan"> 
-            <p class="section__title"><b class="uppercase"> Peliculas y series<br> ilimitadas</b>  &#128516; </p>
+        <section class="platform section" id="platforms"> 
+            <p class="section__title"><b class="uppercase"> Peliculas y series ilimitadas</b> 🍿 </p>
 
-            <div class="plan__container container grid">
-
-                <div class="plan__card">
-                    <img loading="lazy"  src="./assets/img/icons/netflix-icon.png" class="plan__img">
-                    <div class="plan__description">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias eos repellendus dicta eligendi, ab cum iusto porro dolore provident. </p>
+            <div class="platform__container_streaming container grid">
+                <!--===============================NETFLIX PLATFORM=======================================-->
+                <div class="platform__card">
+                    <img loading="lazy"  src="./assets/img/icons/netflix-icon.png" class="platform__img">
+                    <div class="platform__description">
+                        <p>
+                            Ofrece una gran variedad de documentales, peliculas y series en cualquier pantalla conectada a internet.
+                            Se le brindara un PIN personal, evitando el ingreso de otros usuarios.
+                        </p>
                     </div>
 
-                     <a href="#">
-                        <div class="plan__button">
-                            <i class="fas fa-shopping-cart"></i> Ver planes
-                        </div>
-                    </a>
-                </div>   
+                    <button id="openModal" class="platform__button netflix_button">
+                            <i class="far fa-eye"></i> Ver planes
+                    </button>
+                </div>  
+                       
+                <!--===============================HBO MAX PLATFORM=======================================-->
+                <div class="platform__card">
+                    <img loading="lazy" src="./assets/img/icons/hbo_max.png" class="platform__img" id="hbo_max">
+                    <div class="platform__description">
+                        <p>Sé parte de los universos de Warner Bros., DC Comics, HBO, Cartoon Network y mucho más. Los precios en promocion solo es válido hasta el 31 de Julio.</p>
+                    </div>
+
+                    <button id="openModal" class="platform__button hbo_button">
+                        <i class="far fa-eye"></i> Ver planes
+                    </button>
+                </div>
+
+                <!--===============================DISNEY PLUS PLATFORM=======================================-->
+                <div class="platform__card">
+                    <img loading="lazy"  src="./assets/img/icons/disney_plus.png" class="platform__img" id="disney_plus">
+                    <div class="platform__description">
+                        <p>
+                            Plataforma de streaming de tus historias facoritas. Nunca te aburrirás con el entretenimiento sin fin de Disney, Pixar, Marvel, Star Wars y National Geographic: estrenos, clásicos, series, películas originales y mucho más, todo en tu pantalla.
+                        </p>
+                    </div>
+
+                    <button id="openModal" class="platform__button disney_button">
+                        <i class="far fa-eye"></i> Ver planes
+                    </button>
+                </div>
+
+                <!--===============================AMAZON PRIME VIDEO PLATFORM=======================================-->
+                <div class="platform__card">
+                    <img loading="lazy"  src="./assets/img/icons/prime_video.png" class="platform__img" id="prime_video">
+                    <div class="platform__description">
+                        <p> 
+                            La plataforma contiene un numero reducido de peliculs y series comparada con servicios similares por el que su catalogo actual es bastante limitado. La activación dependerá en el dispositivo que usted indique.
+                        </p>
+                    </div>
+    
+                    <button id="openModal" class="platform__button primevideo_button">
+                        <i class="far fa-eye"></i> Ver planes
+                    </button>
+                </div>
+                <!--===============================STAR PLUS PLATFORM=======================================-->
+                <div class="platform__card">
+                    <img loading="lazy"  src="./assets/img/icons/star_plus.png" class="platform__img" id="star_plus">
+                    <div class="platform__description">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias eos repellendus dicta eligendi, ab cum iusto porro dolore provident. </p>
+                    </div>
+    
+                    <button id="openModal" class="platform__button starplus_button">
+                        <i class="far fa-eye"></i> Ver planes
+                    </button>
+                </div>
+               
+            </div>
+
+
+            <!--========================================= MODALS INFORMATION =============================================-->
+
+            <div id="netflixModal" class="platform__modal display_none">
+                <div class="platform__modal_content ">
+
+                    <span class="closeBtn">&times;</span>
+
+                    <div class="platform__modal_header">
+                        <img src="./assets/img/icons/netflix-icon.png" class="platform_plan_img" >
+                    </div>
+
+                     <div class="platform__modal_body grid">
+
+                         <div class="platform_plan">
+                            <div class="platform_plan_title">
+                                <h3 class="text-color-white uppercase">Plan Individual</h3>
+                            </div>
+                            <div class="plaftorm_plan_data">
+                                <p class="platform_data_price"><span>S/.</span><b>9.90</b></p>
+                                <p class="platform_data_retail txt-first-color">Mensual</p>
+                                <div class="platform_data_details">
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> 1 Dispositivo</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Calidad Ultra HD</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Duración 30 días</p>
+                                </div>
+                            </div> 
+                         </div>
+
+                         <div class="platform_plan">
+                            <div class="platform_plan_title">
+                                <h3 class="text-color-white uppercase">Plan Dúo</h3>
+                            </div>
+                            <div class="plaftorm_plan_data">
+                                <p class="platform_data_price"><span>S/.</span><b>14.90</b></p>
+                                <p class="platform_data_retail txt-first-color">Mensual</p>
+                                <div class="platform_data_details">
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> 2 Dispositivos</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Calidad Ultra HD</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Duración 30 días</p>
+                                </div>
+                            </div> 
+                         </div>
+
+                         <div class="platform_plan">
+                            <div class="platform_plan_title">
+                                <h3 class="text-color-white uppercase">Plan Familiar</h3>
+                            </div>
+                            <div class="plaftorm_plan_data">
+                                <p class="platform_data_price"><span>S/.</span><b>30.00</b></p>
+                                <p class="platform_data_retail txt-first-color">Mensual</p>
+
+                                <div class="platform_data_details">
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> 4 Dispositivos</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Calidad Ultra HD</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Duración 30 días</p>
+                                </div>
+                            </div> 
+                         </div>
+                         
+                     </div>
+
+                     <div class="platform__modal_footer">
+                        <p class="platform__modal_footer_instruction text-bold">Renovación con la misma cuenta.</p>
+                     </div>
+
+                </div>
+            </div>
+
+            <div id="hboModal" class="platform__modal display_none">
+                <div class="platform__modal_content ">
+                    <span class="closeBtn">&times;</span>
+                    <div class="platform__modal_header">
+                        <img src="./assets/img/icons/hbo_max.png" class="platform_plan_img" >
+                    </div>
+
+                     <div class="platform__modal_body grid">
+
+                         <div class="platform_plan">
+                            <div class="platform_plan_title">
+                                <h3 class="text-color-white uppercase">Plan Individual</h3>
+                            </div>
+                            <div class="plaftorm_plan_data">
+                                <p class="platform_data_price"><span>S/.</span><b>7.90</b></p>
+                                <p class="platform_data_retail txt-first-color">Mensual</p>
+                                <div class="platform_data_details">
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> 1 Dispositivo</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Calidad Ultra HD</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Duración 30 dias</p>              
+                                </div>
+                            </div> 
+                         </div>
+
+                         <div class="platform_plan">
+                            <div class="platform_plan_title">
+                                <h3 class="text-color-white uppercase">Plan Familiar</h3>
+                            </div>
+                            <div class="plaftorm_plan_data">
+                                <p class="platform_data_price"><span>S/.</span><b>19.90</b></p>
+                                <p class="platform_data_retail txt-first-color">Mensual</p>
+                                <div class="platform_data_details">
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> 3 Dispositivos</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Calidad Ultra HD</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Duración 30 dias</p>
+                                </div>
+                            </div> 
+                         </div>
+          
+                     </div>
+
+                     <div class="platform__modal_footer">
+                        <p class="platform__modal_footer_instruction text-bold">Renovación con la misma cuenta.</p>
+                     </div>
+                </div>
+            </div>
+          
+
+            <div id="disneyModal" class="platform__modal display_none">
+                <div class="platform__modal_content ">
+
+                    <span class="closeBtn">&times;</span>
+
+                    <div class="platform__modal_header">
+                        <img src="./assets/img/icons/disney_plus.png" class="platform_plan_img" >
+                    </div>
+
+                     <div class="platform__modal_body grid">
+
+                         <div class="platform_plan">
+                            <div class="platform_plan_title">
+                                <h3 class="text-color-white uppercase">Plan Individual</h3>
+                            </div>
+                            <div class="plaftorm_plan_data">
+                                <p class="platform_data_price"><span>S/.</span><b>6.90</b></p>
+                                <p class="platform_data_retail txt-first-color">Mensual</p>
+                                <div class="platform_data_details">
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> 1 Dispositivo</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Calidad Ultra HD</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Duración 30 días</p>
+                                </div>
+                            </div> 
+                         </div>
+
+                         <div class="platform_plan">
+                            <div class="platform_plan_title">
+                                <h3 class="text-color-white uppercase">Plan Estándar</h3>
+                            </div>
+                            <div class="plaftorm_plan_data">
+                                <p class="platform_data_price"><span>S/.</span><b>10.90</b></p>
+                                <p class="platform_data_retail txt-first-color">Mensual</p>
+                                <div class="platform_data_details">
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> 2 Dispositivos</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Calidad Ultra HD</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Duración 30 días</p>
+                                </div>
+                            </div> 
+                         </div>
+
+                         <div class="platform_plan">
+                            <div class="platform_plan_title">
+                                <h3 class="text-color-white uppercase">Plan Familiar</h3>
+                            </div>
+                            <div class="plaftorm_plan_data">
+                                <p class="platform_data_price"><span>S/.</span><b>14.90</b></p>
+                                <p class="platform_data_retail txt-first-color">Mensual</p>
+
+                                <div class="platform_data_details">
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> 4 Dispositivos</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Calidad Ultra HD</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Duración 30 días</p>
+                                </div>
+                            </div> 
+                         </div>
+                     </div>
                 
-                <div class="plan__card">
-                    <img loading="lazy" src="./assets/img/icons/hbo_max.png" class="plan__img" id="hbo_max">
-                    <div class="plan__description">
+                     <div class="platform__modal_footer">
+                        <p class="platform__modal_footer_instruction text-bold">Renovación con la misma cuenta.</p>
+                     </div>
+
+                </div>
+            </div>
+        
+
+            <div id="amazonPrimeModal" class="platform__modal display_none">
+                <div class="platform__modal_content ">
+
+                    <span class="closeBtn">&times;</span>
+
+                    <div class="platform__modal_header">
+                        <img src="./assets/img/icons/prime_video.png" class="platform_plan_img" >
+                    </div>
+
+                     <div class="platform__modal_body grid">
+
+                         <div class="platform_plan">
+                            <div class="platform_plan_title">
+                                <h3 class="text-color-white uppercase">Plan Individual</h3>
+                            </div>
+                            <div class="plaftorm_plan_data">
+                                <p class="platform_data_price"><span>S/.</span><b>5.90</b></p>
+                                <p class="platform_data_retail txt-first-color">Mensual</p>
+                                <div class="platform_data_details">
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> 1 Dispositivo</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Calidad Ultra HD</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Duración 30 días</p>
+                                </div>
+                            </div> 
+                         </div>
+
+                         <div class="platform_plan">
+                            <div class="platform_plan_title">
+                                <h3 class="text-color-white uppercase">Plan Estándar</h3>
+                            </div>
+                            <div class="plaftorm_plan_data">
+                                <p class="platform_data_price"><span>S/.</span><b>9.90</b></p>
+                                <p class="platform_data_retail txt-first-color">Mensual</p>
+                                <div class="platform_data_details">
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> 2 Dispositivos</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Calidad Ultra HD</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Duración 30 días</p>
+                                </div>
+                            </div> 
+                         </div>
+
+                         <div class="platform_plan">
+                            <div class="platform_plan_title">
+                                <h3 class="text-color-white uppercase">Plan Familiar</h3>
+                            </div>
+                            <div class="plaftorm_plan_data">
+                                <p class="platform_data_price"><span>S/.</span><b>12.90</b></p>
+                                <p class="platform_data_retail txt-first-color">Mensual</p>
+
+                                <div class="platform_data_details">
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> 3 Dispositivos</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Calidad Ultra HD</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Duración 30 días</p>
+                                </div>
+                            </div> 
+                         </div>
+                         
+                     </div>
+
+                     <div class="platform__modal_footer">
+                        <p class="platform__modal_footer_instruction text-bold">Renovación con la misma cuenta.</p>
+                     </div>
+                </div>
+            </div>
+
+            
+            <div id="starPlusModal" class="platform__modal display_none">
+                <div class="platform__modal_content ">
+
+                    <span class="closeBtn">&times;</span>
+
+                    <div class="platform__modal_header">
+                        <img src="./assets/img/icons/star_plus.png" class="platform_plan_img" >
+                    </div>
+
+                     <div class="platform__modal_body grid">
+
+                         <div class="platform_plan">
+                            <div class="platform_plan_title">
+                                <h3 class="text-color-white uppercase">Plan Individual</h3>
+                            </div>
+                            <div class="plaftorm_plan_data">
+                                <p class="platform_data_price"><span>S/.</span><b>9.90</b></p>
+                                <p class="platform_data_retail txt-first-color">Mensual</p>
+                                <div class="platform_data_details">
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> 1 Dispositivo</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Calidad Ultra HD</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Duración 30 días</p>
+                                </div>
+                            </div> 
+                         </div>
+
+                         <div class="platform_plan">
+                            <div class="platform_plan_title">
+                                <h3 class="text-color-white uppercase">Plan Dúo</h3>
+                            </div>
+                            <div class="plaftorm_plan_data">
+                                <p class="platform_data_price"><span>S/.</span><b>14.90</b></p>
+                                <p class="platform_data_retail txt-first-color">Mensual</p>
+                                <div class="platform_data_details">
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> 1 Dispositivo</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Calidad Ultra HD</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Duración 30 días</p>
+                                </div>
+                            </div> 
+                         </div>
+
+                         <div class="platform_plan">
+                            <div class="platform_plan_title">
+                                <h3 class="text-color-white uppercase">Plan Familiar</h3>
+                            </div>
+                            <div class="plaftorm_plan_data">
+                                <p class="platform_data_price"><span>S/.</span><b>30.00</b></p>
+                                <p class="platform_data_retail txt-first-color">Mensual</p>
+
+                                <div class="platform_data_details">
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> 1 Dispositivo</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Calidad Ultra HD</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Duración 30 días</p>
+                                </div>
+                            </div> 
+                         </div>
+                         
+                     </div>
+
+                     <div class="platform__modal_footer">
+                        <p class="platform__modal_footer_instruction text-bold">Renovación con la misma cuenta.</p>
+                     </div>
+                </div>
+            </div>
+
+            <!--============================================================================================================-->
+
+
+            <div id="youtubePremiumModal" class="platform__modal display_none">
+                <div class="platform__modal_content ">
+
+                    <span class="closeBtn">&times;</span>
+
+                    <div class="platform__modal_header">
+                        <img src="./assets/img/icons/youtube_premium.png" class="platform_plan_img" >
+                    </div>
+
+                     <div class="platform__modal_body grid">
+
+                         <div class="platform_plan">
+                            <div class="platform_plan_title">
+                                <h3 class="text-color-white uppercase">Plan Individual</h3>
+                            </div>
+                            <div class="plaftorm_plan_data">
+                                <p class="platform_data_price"><span>S/.</span><b>9.90</b></p>
+                                <p class="platform_data_retail txt-first-color">Mensual</p>
+                                <div class="platform_data_details">
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Descargas</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Sin anuncios</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Youtube Music</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Duración 30 días</p>
+                                </div>
+                            </div> 
+                         </div>
+
+                         <div class="platform_plan">
+                            <div class="platform_plan_title">
+                                <h3 class="text-color-white uppercase">Plan Estándar</h3>
+                            </div>
+                            <div class="plaftorm_plan_data">
+                                <p class="platform_data_price"><span>S/.</span><b>17.90</b></p>
+                                <p class="platform_data_retail txt-first-color">Mensual</p>
+                                <div class="platform_data_details">
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Descargas</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Sin anuncios</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Youtube Music</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Duración 30 días</p>
+                                </div>
+                            </div> 
+                         </div>
+                         
+                     </div>
+
+                     <div class="platform__modal_footer">
+                        <p class="platform__modal_footer_instruction text-bold">Renovación con la misma cuenta.</p>
+                     </div>
+                </div>
+            </div>
+
+            <div id="spotifyModal" class="platform__modal display_none">
+                <div class="platform__modal_content ">
+
+                    <span class="closeBtn">&times;</span>
+
+                    <div class="platform__modal_header">
+                        <img src="./assets/img/icons/spotify.png" class="platform_plan_img" >
+                    </div>
+
+                     <div class="platform__modal_body grid">
+
+                         <div class="platform_plan">
+                            <div class="platform_plan_title">
+                                <h3 class="text-color-white uppercase">1 Cuenta Individual</h3>
+                            </div>
+                            <div class="plaftorm_plan_data">
+                                <p class="platform_data_price"><span>S/.</span><b>7.90</b></p>
+                                <p class="platform_data_retail txt-first-color">Mensual</p>
+                                <div class="platform_data_details">
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Salto de canciones</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Descarga tu música</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Sin anuncios</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Duración 30 días</p>
+                                </div>
+                            </div> 
+                         </div>
+
+                         <div class="platform_plan">
+                            <div class="platform_plan_title">
+                                <h3 class="text-color-white uppercase">1 Cuenta Individual</h3>
+                            </div>
+                            <div class="plaftorm_plan_data">
+                                <p class="platform_data_price"><span>S/.</span><b>12.90</b></p>
+                                <p class="platform_data_retail txt-first-color">por 2 Meses</p>
+                                <div class="platform_data_details">
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Salto de canciones</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Descarga tu música</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Sin anuncios</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Duración 60 días</p>
+                                </div>
+                            </div> 
+                         </div>
+
+                         <div class="platform_plan">
+                            <div class="platform_plan_title">
+                                <h3 class="text-color-white uppercase">2 Cuentas</h3>
+                            </div>
+                            <div class="plaftorm_plan_data">
+                                <p class="platform_data_price"><span>S/.</span><b>9.90</b></p>
+                                <p class="platform_data_retail txt-first-color">Mensual</p>
+
+                                <div class="platform_data_details">
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Salto de canciones</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Descarga tu música</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Sin anuncios</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Duración 60 días</p>
+                                </div>
+                            </div> 
+                         </div>
+                         
+                     </div>
+
+                     <div class="platform__modal_footer">
+                        <p class="platform__modal_footer_instruction text-bold">Renovación con la misma cuenta.</p>
+                     </div>
+                </div>
+            </div>
+
+            <div id="tidalHifiModal" class="platform__modal display_none">
+                <div class="platform__modal_content ">
+
+                    <span class="closeBtn">&times;</span>
+
+                    <div class="platform__modal_header">
+                        <img src="./assets/img/icons/tidal_hifi.png" class="platform_plan_img" >
+                    </div>
+
+                     <div class="platform__modal_body grid">
+
+                         <div class="platform_plan">
+                            <div class="platform_plan_title">
+                                <h3 class="text-color-white uppercase">1 Cuenta Individual</h3>
+                            </div>
+                            <div class="plaftorm_plan_data">
+                                <p class="platform_data_price"><span>S/.</span><b>7.90</b></p>
+                                <p class="platform_data_retail txt-first-color">Mensual</p>
+                                <div class="platform_data_details">
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Salto de canciones</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Descarga tu música</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Sin anuncios</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Duración 30 días</p>
+                                </div>
+                            </div> 
+                         </div>
+
+                         <div class="platform_plan">
+                            <div class="platform_plan_title">
+                                <h3 class="text-color-white uppercase">1 Cuenta Individual</h3>
+                            </div>
+                            <div class="plaftorm_plan_data">
+                                <p class="platform_data_price"><span>S/.</span><b>12.90</b></p>
+                                <p class="platform_data_retail txt-first-color">por 2 Meses</p>
+                                <div class="platform_data_details">
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Salto de canciones</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Descarga tu música</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Sin anuncios</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Duración 60 días</p>
+                                </div>
+                            </div> 
+                         </div>
+
+                         <div class="platform_plan">
+                            <div class="platform_plan_title">
+                                <h3 class="text-color-white uppercase">2 Cuentas</h3>
+                            </div>
+                            <div class="plaftorm_plan_data">
+                                <p class="platform_data_price"><span>S/.</span><b>9.90</b></p>
+                                <p class="platform_data_retail txt-first-color">Mensual</p>
+
+                                <div class="platform_data_details">
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Salto de canciones</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Descarga tu música</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Sin anuncios</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Duración 60 días</p>
+                                </div>
+                            </div> 
+                         </div>
+                         
+                     </div>
+
+                     <div class="platform__modal_footer">
+                        <p class="platform__modal_footer_instruction text-bold">Renovación con la misma cuenta.</p>
+                     </div>
+                </div>
+            </div>
+
+            <!--============================================================================================================-->
+
+
+            <div id="ultraPlayModal" class="platform__modal display_none">
+                <div class="platform__modal_content ">
+
+                    <span class="closeBtn">&times;</span>
+
+                    <div class="platform__modal_header">
+                        <img src="./assets/img/icons/ultra_play.png" class="platform_plan_img" >
+                    </div>
+
+                     <div class="platform__modal_body grid">
+
+                         <div class="platform_plan">
+                            <div class="platform_plan_title">
+                                <h3 class="text-color-white uppercase">Plan Estándar</h3>
+                            </div>
+                            <div class="plaftorm_plan_data">
+                                <p class="platform_data_price"><span>S/.</span><b>19.90</b></p>
+                                <p class="platform_data_retail txt-first-color">Mensual</p>
+                                <div class="platform_data_details">
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> 2 Dispositivos</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Canales, series y peliculas</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Duración 30 días</p>
+                                </div>
+                            </div> 
+                         </div>
+
+                         <div class="platform_plan">
+                            <div class="platform_plan_title">
+                                <h3 class="text-color-white uppercase">Plan Familiar</h3>
+                            </div>
+                            <div class="plaftorm_plan_data">
+                                <p class="platform_data_price"><span>S/.</span><b>27.90</b></p>
+                                <p class="platform_data_retail txt-first-color">Mensual</p>
+                                <div class="platform_data_details">
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> 3 Dispositivos</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Canales, series y peliculas</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Duración 30 días</p>
+                                </div>
+                            </div> 
+                         </div>
+
+                         <div class="platform_plan">
+                            <div class="platform_plan_title">
+                                <h3 class="text-color-white uppercase">Plan Familiar x3</h3>
+                            </div>
+                            <div class="plaftorm_plan_data">
+                                <p class="platform_data_price"><span>S/.</span><b>9.90</b></p>
+                                <p class="platform_data_retail txt-first-color">por 3 Meses</p>
+
+                                <div class="platform_data_details">
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> 3 Dispositivos</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Canales, series y peliculas</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Duración 90 días</p>
+                                </div>
+                            </div> 
+                         </div>
+                         
+                     </div>
+
+                     <div class="platform__modal_footer">
+                        <p class="platform__modal_footer_instruction text-bold">Renovación con la misma cuenta.</p>
+                     </div>
+                </div>
+            </div>
+
+            <div id="movistarPlayModal" class="platform__modal display_none">
+                <div class="platform__modal_content ">
+
+                    <span class="closeBtn">&times;</span>
+
+                    <div class="platform__modal_header">
+                        <img src="./assets/img/icons/mov_play.png" class="platform_plan_img" >
+                    </div>
+
+                     <div class="platform__modal_body grid">
+
+                         <div class="platform_plan">
+                            <div class="platform_plan_title">
+                                <h3 class="text-color-white uppercase">Plan Individual</h3>
+                            </div>
+                            <div class="plaftorm_plan_data">
+                                <p class="platform_data_price"><span>S/.</span><b>9.90</b></p>
+                                <p class="platform_data_retail txt-first-color">Mensual</p>
+                                <div class="platform_data_details">
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> 1 Dispositivo</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Calidad HD-SD</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Duración 30 días</p>
+                                </div>
+                            </div> 
+                         </div>
+
+                         <div class="platform_plan">
+                            <div class="platform_plan_title">
+                                <h3 class="text-color-white uppercase">Plan Estándar</h3>
+                            </div>
+                            <div class="plaftorm_plan_data">
+                                <p class="platform_data_price"><span>S/.</span><b>12.90</b></p>
+                                <p class="platform_data_retail txt-first-color">Mensual</p>
+                                <div class="platform_data_details">
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> 1 Dispositivo</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Calidad HD-SD</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Duración 30 días</p>
+                                </div>
+                            </div> 
+                         </div>
+
+                         <div class="platform_plan">
+                            <div class="platform_plan_title">
+                                <h3 class="text-color-white uppercase">Plan Familiar</h3>
+                            </div>
+                            <div class="plaftorm_plan_data">
+                                <p class="platform_data_price"><span>S/.</span><b>17.90</b></p>
+                                <p class="platform_data_retail txt-first-color">Mensual</p>
+
+                                <div class="platform_data_details">
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> 4 Dispositivos</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Calidad HD-SD</p>
+                                    <p class="data_detail"><i class="far fa-check-circle"></i> Duración 30 días</p>
+                                </div>
+                            </div> 
+                         </div>
+                         
+                     </div>
+
+                     <div class="platform__modal_footer">
+                        <p class="platform__modal_footer_instruction text-bold">Renovación con la misma cuenta.</p>
+                     </div>
+                </div>
+            </div>
+
+            <br><br>
+
+
+
+
+            <p class="section__title"><b class="uppercase"> Música sin interrupciones</b> 🎶 </p>
+           
+
+            <div class="platform__container_musica container grid">
+                <!--===============================SPOTIFY PLATFORM=======================================-->
+                <div class="platform__card">
+                    <img loading="lazy"  src="./assets/img/icons/spotify.png" class="platform__img" id="spotify">
+                    <div class="platform__description">
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias eos repellendus dicta eligendi, ab cum iusto porro dolore provident. </p>
                     </div>
 
-                     <a href="#">
-                        <div class="plan__button">
-                            <i class="fas fa-shopping-cart"></i> Ver planes
-                        </div>
-                    </a>
-                </div>
+                    <button id="openModal" class="platform__button spotify_button">
+                        <i class="far fa-eye"></i> Ver planes
+                    </button>
+                </div>   
 
-                <div class="plan__card">
-                    <img loading="lazy"  src="./assets/img/icons/disney_plus.png" class="plan__img" id="disney_plus">
-                    <div class="plan__description">
+                <!--===============================YOUTUBE PREMIUMPLATFORM=======================================-->
+                <div class="platform__card">
+                    <img loading="lazy" src="./assets/img/icons/youtube_premium.png" class="platform__img" id="hbo_max">
+                    <div class="platform__description">
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias eos repellendus dicta eligendi, ab cum iusto porro dolore provident. </p>
                     </div>
 
-                     <a href="#">
-                        <div class="plan__button">
-                            <i class="fas fa-shopping-cart"></i> Ver planes
-                        </div>
-                    </a>
+                    <button id="openModal" class="platform__button youtube_premium_button">
+                        <i class="far fa-eye"></i> Ver planes
+                    </button>                
                 </div>
 
-                <div class="plan__card">
-                    <img loading="lazy"  src="./assets/img/icons/prime_video.png" class="plan__img" id="prime_video">
-                    <div class="plan__description">
+                <!--===============================TIDAL HIFI PLATFORM=======================================-->
+                <div class="platform__card">
+                    <img loading="lazy"  src="./assets/img/icons/tidal_hifi.png" class="platform__img" id="tidal_hifi">
+                    <div class="platform__description">
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias eos repellendus dicta eligendi, ab cum iusto porro dolore provident. </p>
                     </div>
 
-                     <a href="#">
-                        <div class="plan__button">
-                            <i class="fas fa-shopping-cart"></i> Ver planes
-                        </div>
-                    </a>
+                    <button id="openModal" class="platform__button tida_hifi_button">
+                        <i class="far fa-eye"></i> Ver planes
+                    </button>
                 </div>
+ 
+            </div>
 
-                <div class="plan__card">
-                    <img loading="lazy" src="./assets/img/icons/youtube_premium.png" class="plan__img" id="youtube_premium">
-                    <div class="plan__description">
+            <br><br>
+            <p class="section__title"><b class="uppercase"> TV Online</b> 📺 </p>
+
+            <div class="platform__container_tv container grid">
+                <!--===============================MOVISTAR PLAY PLATFORM=======================================-->
+                <div class="platform__card">
+                    <img loading="lazy"  src="./assets/img/icons/mov_play.png" class="platform__img" id="mov_play">
+                    <div class="platform__description">
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias eos repellendus dicta eligendi, ab cum iusto porro dolore provident. </p>
                     </div>
 
-                     <a href="#">
-                        <div class="plan__button">
-                            <i class="fas fa-shopping-cart"></i> Ver planes
-                        </div>
-                    </a>
-                </div>
+                    <button id="openModal" class="platform__button movistar_play_button">
+                        <i class="far fa-eye"></i> Ver planes
+                    </button>
+                </div>   
 
-                <div class="plan__card">
-                    <img loading="lazy"  src="./assets/img/icons/spotify.png" class="plan__img" id="spotify">
-                    <div class="plan__description">
+                <!--===============================ULTRA PLAY PLATFORM=======================================-->
+                <div class="platform__card">
+                    <img loading="lazy" src="./assets/img/icons/ultra_play.png" class="platform__img" id="ultra_play">
+                    <div class="platform__description">
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias eos repellendus dicta eligendi, ab cum iusto porro dolore provident. </p>
                     </div>
 
-                     <a href="#">
-                        <div class="plan__button">
-                            <i class="fas fa-shopping-cart"></i> Ver planes
-                        </div>
-                    </a>
+                    <button id="openModal" class="platform__button ultra_play_button">
+                        <i class="far fa-eye"></i> Ver planes
+                    </button>
                 </div>
-
-                <div class="plan__card">
-                    <img loading="lazy"  src="./assets/img/icons/ultra_play.png" class="plan__img" id="ultra_play">
-                    <div class="plan__description">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias eos repellendus dicta eligendi, ab cum iusto porro dolore provident. </p>
-                    </div>
-
-                    <a href="#">
-                        <div class="plan__button">
-                            <i class="fas fa-shopping-cart"></i> Ver planes
-                        </div>
-                    </a>
-                </div>
-
-                <div class="plan__card">
-                    <img loading="lazy"  src="./assets/img/icons/star_plus.png" class="plan__img" id="star_plus">
-                    <div class="plan__description">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias eos repellendus dicta eligendi, ab cum iusto porro dolore provident. </p>
-                    </div>
-
-                    <a href="#">
-                        <div class="plan__button">
-                            <i class="fas fa-shopping-cart"></i> Ver planes
-                        </div>
-                    </a>
-                </div>
-
-                <div class="plan__card">
-                    <img loading="lazy" src="./assets/img/icons/mov_play.png" class="plan__img" id="mov_play">
-                    <div class="plan__description">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias eos repellendus dicta eligendi, ab cum iusto porro dolore provident. </p>
-                    </div>
-                   
-                    <a href="#">
-                        <div class="plan__button">
-                            <i class="fas fa-shopping-cart"></i> Ver planes
-                        </div>
-                    </a>
-                </div>
-
+          
             </div>
 
         </section>
@@ -293,8 +906,6 @@
 
     <!-- SCROLL REVEAL JS-->
     <script src="./assets/js/scrollreveal.min.js"></script>
-    <!-- SWIPER JS -->
-    <script src="./assets/js/swiper-bundle.min.js"></script>
     <!-- MAIN JS-->
     <script src="./assets/js/main.js"></script>-
 </body>
