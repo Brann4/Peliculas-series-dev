@@ -8,7 +8,7 @@
             headerTitle: 'Somos Premium Whatsapp Chat',
             headerColor: 'crimson',
             position: 'right',
-            popupMessage: 'Hola ¿De que plan desea saber mas detalles?',
+            popupMessage: 'Hola 😸. Dinos el plan y la plataforma que hayas decidido obtener de nuestras ofertas.',
             showPopup: false,
             showOnIE: true,
             autoOpenTimeout: 0,
