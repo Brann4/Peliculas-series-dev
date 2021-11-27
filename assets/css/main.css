@@ -339,18 +339,24 @@ input {
   row-gap: 3rem;
 }
 
-.home__data-subtitle,
 .home__data-title, 
 .home__social-link, 
 .home__info_promotion {
   transition: all .5s ease-in-out;
   color: var(--white-color);
 }
+.home__data_container-subtitle{
 
+  margin-right: 2em;
+}
 .home__data-subtitle {
-  display: block;
+  color: var(--white-color);
   font-weight: var(--font-semi-bold);
   margin-bottom: var(--mb-0-75);
+}
+
+.icon-phone{
+  font-size: 24px;
 }
 
 .home__data-title {
