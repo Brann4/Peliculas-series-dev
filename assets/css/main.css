@@ -172,7 +172,7 @@ input {
   color: var(--black-color);
   text-align: center;
   text-transform: capitalize;
-  margin-bottom: var(--mb-2-5);
+  margin: 0 2em var(--mb-2-5) 2em;
 }
 
 .uppercase{
@@ -634,9 +634,11 @@ input {
 }
 
 .hbo_button{
-  margin-top: 75px;
+  margin-top: 124px;
 }
-
+.youtube_premium_button{
+  margin-top: 49px;
+}
 .starplus_button{
   margin-top: 50px;
 }
