@@ -85,6 +85,9 @@
     .platform__modal_content{
       width: 400px;
     }
+    .instruct__container{
+      grid-template-columns: repeat(2, max-content);
+    }
   }
   
   @media screen and (min-width: 768px) {
@@ -244,6 +247,10 @@
     .home__info-img {
       width: 240px;
     }
+    .instruct__container{
+      grid-template-columns: repeat(3, max-content);
+      gap: 4rem;
+    }
 
     .platform__container_streaming{
       padding-top: 2rem;
@@ -307,6 +314,10 @@
     .platform__img{
       transition: .5s all ease-in-out;
       width: 320px;
+    }
+    .instruct__container{
+      grid-template-columns: repeat(3, max-content);
+      gap: 7rem;
     }
 
     #mov_play{

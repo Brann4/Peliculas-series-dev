@@ -218,7 +218,8 @@ sr.reveal(`.platform__card`, {
 });
 
 sr.reveal(`.home__data,
-           .home__social`,{
+           .home__social,
+           .intruct__card`,{
     origin: 'left',
     interval: 700,
 });

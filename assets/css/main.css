@@ -442,6 +442,42 @@ input {
   background: none;
 }
 
+/*=============== INSTRUCTIONS ===============*/
+.instruct{
+  background-color: black;
+  box-shadow: .1em .1em .5em .1em rgba(0, 0, 0, 0.4);
+}
+.instruct__container{
+  grid-template-columns: repeat(1, max-content);
+  justify-items: center;
+  justify-content: center;
+  gap: 2rem ;
+  margin-top: var(--mb-2);
+  margin-bottom: var(--mb-2);
+  transition: var(--img-transition);
+}
+
+.intruct__card{
+  width: 280px;
+}
+.instruct_card-icon > i {
+  font-size: 80px;
+  text-align: center;
+}
+.instruct_card-icon{
+  text-align: center;
+}
+.instruct__card-title{
+  text-align: center;
+}
+.instruct__card-title > h1{
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.instruct__card-description{
+  text-align: justify;
+  padding: 0 24px;
+}
 /*=============== PLATFORMS ===============*/
 .platform__card,
 .platform__img{
