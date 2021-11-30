@@ -162,6 +162,9 @@ input {
 .text-bold{
   font-weight: bold;
 }
+.text-bolder{
+  font-weight: bolder;
+}
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
   padding: 3.5rem 0 2.5rem;
@@ -459,6 +462,7 @@ input {
 
 .intruct__card{
   width: 280px;
+  margin-bottom: 35px;
 }
 .instruct_card-icon > i {
   font-size: 80px;
@@ -471,8 +475,8 @@ input {
   text-align: center;
 }
 .instruct__card-title > h1{
-  margin-top: 24px;
-  margin-bottom: 24px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .instruct__card-description{
   text-align: justify;
